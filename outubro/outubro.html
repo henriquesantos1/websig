@@ -110,7 +110,7 @@
             onEachFeature: onEachFeature
         }).bindTooltip(function (layer){
             return layer.feature.properties.Concelho 
-                   + '<p style="color:purple">' + layer.feature.properties.Casos10k_9.toString() + ' casos or 10.000 hab. </p>';       
+                   + '<p style="color:purple">' + layer.feature.properties.Casos10k_1.toString() + ' casos por 10.000 hab. </p>';       
         }).addTo(map);
 
          var legend = L.control({position: 'bottomright'}); // Try the other three corners if you like.
@@ -120,7 +120,7 @@
               var div = L.DomUtil.create('div', 'legend'),
                   grades = [0, 5, 10, 15, 20]; // The break values to define the intervals of population, note we begin from 0 here
 
-              div.innerHTML = '<b>Casos Confirmados <br> Outubro de 2020 <br></b>'; // The legend title, in this case it's Population Density 2011
+              div.innerHTML = '<b>Casos Confirmados por 10 mil habitantes <br> Outubro de 2020 <br></b>'; // The legend title, in this case it's Population Density 2011
 
               // Loop through our the classes and generate a label with a colored square for each interval.
               // If you are creating a similar choropleth map, you do not need to change lines below.
