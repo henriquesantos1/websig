@@ -110,7 +110,7 @@
             onEachFeature: onEachFeature
         }).bindTooltip(function (layer){
             return layer.feature.properties.Concelho 
-                   + '<p style="color:purple">' + layer.feature.properties.Casos10k_12.toString() + ' casos por 10.000 hab. </p>';       
+                   + '<p style="color:purple">' + layer.feature.properties.Casos10k_3.toString() + ' casos por 10.000 hab. </p>';       
         }).addTo(map);
 
          var legend = L.control({position: 'bottomright'}); // Try the other three corners if you like.
